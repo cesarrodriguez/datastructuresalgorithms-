@@ -23,7 +23,7 @@ public class LinkedList {
         }
     }
 
-    // append - add in the last Node.
+    // append - add in the last Node. O(1)
     public void append(int value){
         Node node = new Node(value);
         if(length == 0){
@@ -36,12 +36,35 @@ public class LinkedList {
         length++;
     }
 
+    // RemoveLast  - Remove The Last Node - O(N)
+    public void removeLast(){
+
+        if(length == 0){
+            return;
+        }
+
+        Node preNode = head;
+        Node temp = head;
+        while(temp.getNext() != null){
+            preNode =  temp;
+            temp = temp.getNext();
+        }
+        tail = preNode;
+        tail.setNext(null);
+        length --;
+
+        if(length == 0){
+           head = null;
+           tail = null;
+        }
+    }
+
     public void getHead() {
-        System.out.println("Head: " + head.getValue());
+        System.out.println("Head: " + (head == null? " ": head.getValue()));
     }
 
     public void getTail() {
-        System.out.println("Tail: " + tail.getValue());
+        System.out.println("Tail: " + (tail == null? "" : tail.getValue()));
     }
 
     public void getLenght() {
