@@ -23,12 +23,25 @@ public class LinkedList {
         }
     }
 
+    // append - add in the last Node.
+    public void append(int value){
+        Node node = new Node(value);
+        if(length == 0){
+            head = node;
+        } else {
+            Node nodeTail = tail;
+            nodeTail.setNext(node);
+        }
+        tail = node;
+        length++;
+    }
+
     public void getHead() {
         System.out.println("Head: " + head.getValue());
     }
 
     public void getTail() {
-        System.out.println("Tail: " + head.getValue());
+        System.out.println("Tail: " + tail.getValue());
     }
 
     public void getLenght() {
