@@ -5,7 +5,7 @@ public class Main {
         LinkedList linkedList = new LinkedList(1);
         linkedList.append(4);
         linkedList.append(5);
-        linkedList.append(6);
+       // linkedList.append(6);
 
         linkedList.getHead();
         linkedList.getTail();
@@ -20,6 +20,13 @@ public class Main {
         linkedList.print();
 
         linkedList.prepend(10);
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
+
+        linkedList.removeFirst();
 
         linkedList.getHead();
         linkedList.getTail();

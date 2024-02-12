@@ -71,6 +71,21 @@ public class LinkedList {
         length++;
     }
 
+    public Node removeFirst(){
+        if(length == 0){
+            return null;
+        }
+        Node temp = head;
+        if(head.getNext() == null){
+            head = null;
+            tail = null;
+        }else{
+            head = head.getNext();
+        }
+        length --;
+        return temp;
+    }
+
     public void getHead() {
         System.out.println("Head: " + (head == null? " ": head.getValue()));
     }
