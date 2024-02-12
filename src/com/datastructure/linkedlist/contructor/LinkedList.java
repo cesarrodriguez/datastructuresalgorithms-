@@ -59,6 +59,18 @@ public class LinkedList {
         }
     }
 
+    //Prepend - add a new node in first in LinkedList O(1)
+    public void prepend(int value){
+        Node node = new Node(value);
+        if(length == 0){
+          tail = node;
+        } else {
+            node.setNext(head);
+        }
+        head = node;
+        length++;
+    }
+
     public void getHead() {
         System.out.println("Head: " + (head == null? " ": head.getValue()));
     }
