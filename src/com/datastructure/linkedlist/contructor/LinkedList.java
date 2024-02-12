@@ -60,6 +60,7 @@ public class LinkedList {
         Node prevNode = get(index-1);
         Node currentNode = prevNode.getNext();
         prevNode.setNext(currentNode.getNext());
+        currentNode.setNext(null);
         length --;
         return currentNode;
     }
