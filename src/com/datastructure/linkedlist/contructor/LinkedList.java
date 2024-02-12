@@ -46,6 +46,24 @@ public class LinkedList {
         return true;
     }
 
+    public Node remove(int index){
+        if(index < 0  || index >= length){
+            return null;
+        }
+        if(index == 0){
+            return removeFirst();
+        }
+
+        if(index == (length-1)){
+            return removeLast();
+        }
+        Node prevNode = get(index-1);
+        Node currentNode = prevNode.getNext();
+        prevNode.setNext(currentNode.getNext());
+        length --;
+        return currentNode;
+    }
+
     public boolean set(int index, int value){
         Node indexedNode = get(index);
         if(indexedNode != null){
@@ -82,10 +100,10 @@ public class LinkedList {
     }
 
     // RemoveLast  - Remove The Last Node - O(N)
-    public void removeLast(){
+    public Node removeLast(){
 
         if(length == 0){
-            return;
+            return null;
         }
 
         Node preNode = head;
@@ -102,6 +120,7 @@ public class LinkedList {
            head = null;
            tail = null;
         }
+        return tail;
     }
 
     //Prepend - add a new node in first in LinkedList O(1)

@@ -52,6 +52,13 @@ public class Main {
         linkedList.print();
 
 
+        System.out.println(linkedList.remove(1));
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
+
 
     }
 }
