@@ -22,17 +22,24 @@ public class LinkedList {
             temp = temp.getNext();
         }
     }
-
+    public boolean set(int index, int value){
+        Node indexedNode = get(index);
+        if(indexedNode != null){
+            indexedNode.setValue(value);
+            return true;
+        }
+        return false;
+    }
     public Node get(int index){
-        if(index < 0 || length == 0 || index > length-1){
+        if(index < 0  || index >= length){
             return null;
         }
         if(index == 0){
             return head;
         }
-        Node temp = null;
-        for(int i = 0; i < index; i++){
-            temp = head.getNext();
+        Node temp = head;
+        for(int i = 0; i <= index; i++){
+            temp = temp.getNext();
         }
         return temp;
     }
