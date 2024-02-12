@@ -15,12 +15,26 @@ public class LinkedList {
         length = 1;
     }
 
-    public void print(){
+    public void print() {
         Node temp = head;
-        while(temp != null){
+        while (temp != null) {
             System.out.println(temp.getValue());
             temp = temp.getNext();
         }
+    }
+
+    public Node get(int index){
+        if(index < 0 || length == 0 || index > length-1){
+            return null;
+        }
+        if(index == 0){
+            return head;
+        }
+        Node temp = null;
+        for(int i = 0; i < index; i++){
+            temp = head.getNext();
+        }
+        return temp;
     }
 
     // append - add in the last Node. O(1)
