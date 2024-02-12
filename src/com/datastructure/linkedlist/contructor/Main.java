@@ -34,7 +34,7 @@ public class Main {
         linkedList.print();
 
 
-        System.out.println(linkedList.get(2));
+        System.out.println(linkedList.get(-1));
 
         System.out.println(linkedList.set(1, 100));
 
@@ -43,12 +43,15 @@ public class Main {
         linkedList.getLenght();
         linkedList.print();
 
+
         System.out.println(linkedList.insert(1, 1000));
 
         linkedList.getHead();
         linkedList.getTail();
         linkedList.getLenght();
         linkedList.print();
+
+
 
     }
 }

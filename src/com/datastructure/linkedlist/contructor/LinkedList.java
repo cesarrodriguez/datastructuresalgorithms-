@@ -29,18 +29,19 @@ public class LinkedList {
         }
         if(index == 0){
             prepend(value);
-            length++;
             return true;
         }
-        Node node = new Node(value);
-        Node preNode = head;
-        Node temp = head;
-        for(int i = 0; i < index; i++){
-            preNode = temp;
-            temp = temp.getNext();
+
+        if(index == length){
+            append(value);
+            return true;
         }
-        preNode.setNext(node);
+
+        Node node = new Node(value);
+        Node preNode = get(index-1);
+        Node temp = preNode.getNext();
         node.setNext(temp);
+        preNode.setNext(node);
         length++;
         return true;
     }
@@ -61,7 +62,7 @@ public class LinkedList {
             return head;
         }
         Node temp = head;
-        for(int i = 0; i <= index; i++){
+        for(int i = 0; i < index; i++){
             temp = temp.getNext();
         }
         return temp;
