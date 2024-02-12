@@ -22,6 +22,29 @@ public class LinkedList {
             temp = temp.getNext();
         }
     }
+    public boolean insert(int index, int value){
+
+        if(index < 0  || index >= length){
+            return false;
+        }
+        if(index == 0){
+            prepend(value);
+            length++;
+            return true;
+        }
+        Node node = new Node(value);
+        Node preNode = head;
+        Node temp = head;
+        for(int i = 0; i < index; i++){
+            preNode = temp;
+            temp = temp.getNext();
+        }
+        preNode.setNext(node);
+        node.setNext(temp);
+        length++;
+        return true;
+    }
+
     public boolean set(int index, int value){
         Node indexedNode = get(index);
         if(indexedNode != null){

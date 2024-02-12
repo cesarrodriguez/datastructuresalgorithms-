@@ -43,5 +43,12 @@ public class Main {
         linkedList.getLenght();
         linkedList.print();
 
+        System.out.println(linkedList.insert(1, 1000));
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
+
     }
 }
