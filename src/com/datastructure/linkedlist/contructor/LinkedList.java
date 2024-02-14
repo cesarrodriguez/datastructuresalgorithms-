@@ -22,6 +22,22 @@ public class LinkedList {
             temp = temp.getNext();
         }
     }
+
+    public void reverse(){
+        Node current = head;
+        Node next = head.getNext();
+        Node prev = null;
+        for(int i = 0; i < length; i++){
+            current.setNext(prev);
+            prev = current;
+            current = next;
+            next = current == null? null: current.getNext();
+        }
+        Node temp = tail;
+        tail = head;
+        head = temp;
+
+    }
     public boolean insert(int index, int value){
 
         if(index < 0  || index >= length){

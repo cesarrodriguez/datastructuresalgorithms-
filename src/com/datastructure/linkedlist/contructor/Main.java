@@ -59,6 +59,12 @@ public class Main {
         linkedList.getLenght();
         linkedList.print();
 
+        linkedList.reverse();
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
 
     }
 }
