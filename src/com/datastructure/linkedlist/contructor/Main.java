@@ -68,18 +68,25 @@ public class Main {
         linkedList.print();
 
  */
-        linkedList.append(9);
-        linkedList.append(3);
-        linkedList.append(7);
-        linkedList.append(5);
-        linkedList.append(6);
-        linkedList.append(4);
-        linkedList.append(8);
+        linkedList.append(1);
         linkedList.append(2);
-        linkedList.append(10);
+        linkedList.append(3);
+        linkedList.append(1);
+        linkedList.append(2);
+        linkedList.append(3);
+        linkedList.append(4);
+        linkedList.append(4);
+
 
 
         linkedList.partitionList(3);
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
+
+        linkedList.removeDuplicates();
 
         linkedList.getHead();
         linkedList.getTail();

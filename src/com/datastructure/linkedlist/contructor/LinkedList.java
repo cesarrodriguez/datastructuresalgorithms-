@@ -186,7 +186,8 @@ public class LinkedList {
 
         //while loop that continues until current is null
         while (current != null) {
-
+         //4
+         // 1 -> 2 -> 4 -> 3 -> 7 -> 10 -> 5 -> null
         //Check if the value of the current node is less than the given value x
             if (current.value < x) {
         //If it is, update the next pointer of prev1 to point to current, and update prev1 to point to current.
@@ -206,6 +207,29 @@ public class LinkedList {
         prev1.next = dummy2.next;
         //Update the head of the list to the first node of the first partition (i.e., head = dummy1.next).
         head = dummy1.next;
+    }
+
+    public void removeDuplicates(){
+
+        if(head == null){
+            return;
+        }
+
+        Node fast = head;
+        Node slow = head;
+        while (slow != null) {
+            while (fast.next != null) {
+                if (slow.value == fast.next.value) {
+                    Node temp = fast.next;
+                    fast.next = fast.next.next;
+                    temp.next = null;
+                    continue;
+                }
+                fast = fast.next;
+            }
+            slow = slow.next;
+            fast = slow;
+        }
     }
 
     public void getHead() {
