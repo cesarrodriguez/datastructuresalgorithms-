@@ -3,6 +3,7 @@ package com.datastructure.linkedlist.contructor;
 public class Main {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList(1);
+/*
         linkedList.append(4);
         linkedList.append(5);
         linkedList.append(6);
@@ -65,6 +66,26 @@ public class Main {
         linkedList.getTail();
         linkedList.getLenght();
         linkedList.print();
+
+ */
+        linkedList.append(9);
+        linkedList.append(3);
+        linkedList.append(7);
+        linkedList.append(5);
+        linkedList.append(6);
+        linkedList.append(4);
+        linkedList.append(8);
+        linkedList.append(2);
+        linkedList.append(10);
+
+
+        linkedList.partitionList(3);
+
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLenght();
+        linkedList.print();
+
 
     }
 }

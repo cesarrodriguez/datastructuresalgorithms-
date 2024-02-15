@@ -3,9 +3,9 @@ package com.datastructure.linkedlist.contructor;
 //LinkedList Class, responsable to Store and management Nodes
 public class LinkedList {
     //Head pointer
-    private Node head;
+     Node head;
     //Tail pointer
-    private Node tail;
+     Node tail;
     //And lenght LinkedList
     private int length;
     public LinkedList(int value){
@@ -40,7 +40,7 @@ public class LinkedList {
     }
     public boolean insert(int index, int value){
 
-        if(index < 0  || index >= length){
+        if(index < 0  || index > length){
             return false;
         }
         if(index == 0){
@@ -165,6 +165,47 @@ public class LinkedList {
         }
         length --;
         return temp;
+    }
+
+    public void partitionList(int x){
+
+        //Check if head is null.
+        if (head == null) {
+            return;
+        }
+        //Create two dummy nodes, dummy1 and dummy2, and initialize two pointers,
+        Node dummy1 = new Node(0);
+        Node dummy2 = new Node(0);
+
+        //prev1 and prev2, pointing to these dummy nodes respectively.
+        Node prev1 = dummy1;
+        Node prev2 = dummy2;
+
+        //Initialize a pointer current pointing to the head of the list.
+        Node current = head;
+
+        //while loop that continues until current is null
+        while (current != null) {
+
+        //Check if the value of the current node is less than the given value x
+            if (current.value < x) {
+        //If it is, update the next pointer of prev1 to point to current, and update prev1 to point to current.
+                prev1.next = current;
+                prev1 = current;
+        //If it is not, update the next pointer of prev2 to point to current, and update prev2 to point to current.
+            } else {
+                prev2.next = current;
+                prev2 = current;
+            }
+        //Move current one step ahead (i.e., current = current.next)
+            current = current.next;
+        }
+        //Set the next pointer of prev2 to null, which terminates the second partition.
+        prev2.next = null;
+        //Set the next pointer of prev1 to the first node of the second partition (i.e., prev1.next = dummy2.next).
+        prev1.next = dummy2.next;
+        //Update the head of the list to the first node of the first partition (i.e., head = dummy1.next).
+        head = dummy1.next;
     }
 
     public void getHead() {
