@@ -25,55 +25,55 @@ These is just a basic set, we have lot of other data structures as well,
             - B Tree
             - Trie
 
-- [X] [Choosing the right data structure](../master/Right_Data_Structure.md)
+- [X] [Choosing the right data structure]()
 
 Below topics/problems are covered as of now.  
 
 **1. Strings** 
-- [X] [String Introduction](../master/src/com/deepak/data/structures/Strings/Strings_Introduction.md)
-- [X] [StringBuilder Implementation](../master/src/com/deepak/data/structures/Strings/CustomStringBuilder.java)
+- [ ] [String Introduction]()
+- [ ] [StringBuilder Implementation]()
 
 **2. Arrays**
-- [X] [Arrays Introduction](../master/src/com/deepak/data/structures/Arrays/Arrays_Introduction.md)
-- [X] [Basic operations on Arrays](../master/src/com/deepak/data/structures/Arrays/BasicOperations.java)
-- [X] [Associative Array](../master/src/com/deepak/data/structures/Arrays/AssociativeArray.java)
-- [X] [Sparse Array](../master/src/com/deepak/data/structures/Arrays/SparseArray.java)
-- [X] [Pair](../master/src/com/deepak/data/structures/Arrays/Pair.java)
-- [X] [Tuple](../master/src/com/deepak/data/structures/Arrays/Tuple.java)
-- [X] [ArrayList Implementation](../master/src/com/deepak/data/structures/Arrays/CustomArrayList.java)
+- [ ] [Arrays Introduction]()
+- [ ] [Basic operations on Arrays]()
+- [ ] [Associative Array]()
+- [ ] [Sparse Array]()
+- [ ] [Pair]()
+- [ ] [Tuple]()
+- [ ] [ArrayList Implementation]()
 
 **3. LinkedList**    
-- [X] [Linked List Introduction](../master/src/com/deepak/data/structures/LinkedList/LinkedListIntroduction.md)
-- [X] [Singly LinkedList Implementation](../master/src/com/deepak/data/structures/LinkedList/SinglyLinkedList.java)
-- [X] [Doubly LinkedList Implementation](../master/src/com/deepak/data/structures/LinkedList/DoublyLinkedList.java)
-- [X] [Circular LinkedList Implementation](../master/src/com/deepak/data/structures/LinkedList/CircularLinkedList.java)
+- [X] [Linked List Introduction]()
+- [X] [Singly LinkedList Implementation]()
+- [ ] [Doubly LinkedList Implementation]()
+- [ ] [Circular LinkedList Implementation]()
 
 **4. Stack**
-- [X] [Stack Introduction](../master/src/com/deepak/data/structures/Stack/StackIntroduction.md)
-- [X] [Simple stack from list](../master/src/com/deepak/data/structures/Stack/SimpleStackFromList.java)
-- [X] [Array based Implementation](../master/src/com/deepak/data/structures/Stack/ArrayBasedStack.java)
-- [X] [LinkedList based Implementation](../master/src/com/deepak/data/structures/Stack/LinkedListBasedStack.java)
-- [X] [Queue based Implementation](../master/src/com/deepak/data/structures/Stack/QueueBasedStack.java) 
+- [ ] [Stack Introduction]()
+- [ ] [Simple stack from list]()
+- [ ] [Array based Implementation]()
+- [ ] [LinkedList based Implementation]()
+- [ ] [Queue based Implementation]() 
 
 **5. Queue**
-- [X] [Queue Introduction](../master/src/com/deepak/data/structures/Queue/QueueIntroduction.md)
-- [X] [Array based Implementation](../master/src/com/deepak/data/structures/Queue/ArrayBasedQueue.java)
-- [X] [LinkedList based Implementation](../master/src/com/deepak/data/structures/Queue/LinkedListBasedQueue.java) 
-- [X] [Stack based Implementation](../master/src/com/deepak/data/structures/Queue/StackBasedQueue.java)
+- [ ] [Queue Introduction]()
+- [ ] [Array based Implementation]()
+- [ ] [LinkedList based Implementation]() 
+- [ ] [Stack based Implementation]()
 
 **6. Vector**
-- [X] [Vector Introduction](../master/src/com/deepak/data/structures/Vector/VectorIntroduction.md)
-- [X] [Vector Implementation](../master/src/com/deepak/data/structures/Vector/CustomVector.java)
+- [ ] [Vector Introduction]()
+- [ ] [Vector Implementation]()
 
 **7. Matrix**
 - [ ] Matrix Introduction
 - [ ] Sparse Matrix
 
 **8. Trees**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Tree/TreesIntroduction.md)
-- [X] [Binary Tree](../master/src/com/deepak/data/structures/Tree/BinaryTree.java)
-- [X] [Binary Search Tree](../master/src/com/deepak/data/structures/Tree/BinarySearchTree.java)
-- [X] [AVL Tree](../master/src/com/deepak/data/structures/Tree/AVLTree.java)
+- [ ] [Introduction]()
+- [ ] [Binary Tree]()
+- [ ] [Binary Search Tree]()
+- [ ] [AVL Tree]()
 - [ ] Splay Tree
 - [ ] B Tree
 - [ ] B+ Tree
@@ -84,12 +84,12 @@ Below topics/problems are covered as of now.
 - [ ] A B Tree
 
 **9. Graphs**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Graph/GraphsIntroduction.md)
+- [ ] [Introduction]()
 - [ ] How graphs are represented in memory
-- [X] [Graph Implementation](../master/src/com/deepak/data/structures/Graph/Graph.java)
+- [ ] [Graph Implementation]()
 - [ ] MultiGraph Implementation
-- [X] [BFS for Graphs](../master/src/com/deepak/data/structures/Graph/BFSGraphs.java)
-- [X] [DFS for Graphs](../master/src/com/deepak/data/structures/Graph/DFSGraphs.java)
+- [ ] [BFS for Graphs]()
+- [ ] [DFS for Graphs]()
 
 **10. Heap**
 - [ ] Introduction
@@ -101,22 +101,22 @@ Below topics/problems are covered as of now.
 - [ ] Weak Heap
 
 **11. Hashing**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Hashing/Introduction.md)
-- [X] [Iterator v/s Enumeration](../master/src/com/deepak/data/structures/Hashing/Iterator_vs_Enumeration.md)
-- [X] [HashTable v/s HashMap](../master/src/com/deepak/data/structures/Hashing/HashTable_vs_HashMap.md)
-- [X] [HashCode and Equals Contract](../master/src/com/deepak/data/structures/Hashing/HashCode&EqualsContract.md)
+- [ ] [Introduction]()
+- [ ] [Iterator v/s Enumeration]()
+- [ ] [HashTable v/s HashMap]()
+- [ ] [HashCode and Equals Contract]()
 - [ ] Bloom Filter
 - [ ] Lookup Table
 - [ ] Collision Handling
     - [ ] Separate Chaining
     - [ ] Linear Probing
     - [ ] Double Hashing 
-- [X] [HashMap Implementation](../master/src/com/deepak/data/structures/Hashing/CustomHashMap.java)
-- [X] [ConcurrentHashMap Introduction](../master/src/com/deepak/data/structures/Hashing/ConcurrentHashMap.md)
-- [X] [ConcurrentHashMap Implementation](../master/src/com/deepak/data/structures/Hashing/ConcurrentHashMapImplementation.java)
-- [X] [ConcurrentModification Exception](../master/src/com/deepak/data/structures/Hashing/ConcurrentModificationException.java)
-- [X] [WeakHashMap Implementation](../master/src/com/deepak/data/structures/Hashing/WeakHashMapImplementation.java)
-- [X] [HashTable Implementation](../master/src/com/deepak/data/structures/Hashing/CustomHashTable.java)
+- [ ] [HashMap Implementation]()
+- [ ] [ConcurrentHashMap Introduction]()
+- [ ] [ConcurrentHashMap Implementation]()
+- [ ] [ConcurrentModification Exception]()
+- [ ] [WeakHashMap Implementation]()
+- [ ] [HashTable Implementation]()
 - [ ] Distributed HashTable
 - [ ] HashSet Implementation
 - [ ] HashList Implementation
@@ -124,51 +124,51 @@ Below topics/problems are covered as of now.
 - [ ] MultiMap
 
 **12. Set**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Set/SetIntroduction.md)
-- [X] [Set Implementation](../master/src/com/deepak/data/structures/Set/ArrayBasedSet.java)
+- [ ] [Introduction]()
+- [ ] [Set Implementation]()
 - [ ] MultiSet
 
 **13. Priority Queue**
 - [ ] Introduction
 - [ ] Array based Implementation
 - [ ] Stack based Implementation 
-- [X] [Dequeue Implementation](../master/src/com/deepak/data/structures/PriorityQueue/Dequeue.java)
+- [ ] [Dequeue Implementation]()
 - [ ] Skip List
 
 **14. Trie**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Trie/TrieIntroduction.md)
-- [X] [Trie Implementation](../master/src/com/deepak/data/structures/Trie/TrieImplementation.java)
+- [ ] [Introduction]()
+- [ ] [Trie Implementation]()
 
 **15. Treap**
 - [ ] Introduction
 - [ ] Treap Implementation
 
 **16. Cache**
-- [X] [Introduction](../master/src/com/deepak/data/structures/Cache/CacheIntroduction.md)
-- [X] [LRU Cache](../master/src/com/deepak/data/structures/Cache/LRUCache.java)
-- [X] [MRU Cache](../master/src/com/deepak/data/structures/Cache/MRUCache.java)
+- [ ] [Introduction]()
+- [ ] [LRU Cache]()
+- [ ] [MRU Cache]()
 
 **17. Miscellaneous**
 - [ ] Bag
-	- [X] [Linked List Based](../master/src/com/deepak/data/structures/Bag/CustomBagLL.java)
+	- [ ] [Linked List Based]()
 	- [ ] Binary Search Tree Based
 
 **18. Common Utils**
-- [X] [StringUtils](../master/src/com/deepak/data/structures/Utils/StringUtils.java)
-- [X] [NumberUtils](../master/src/com/deepak/data/structures/Utils/NumberUtils.java)
-- [X] [ArrayUtils](../master/src/com/deepak/data/structures/Utils/ArrayUtils.java)
-- [X] [BooleanUtils](../master/src/com/deepak/data/structures/Utils/BooleanUtils.java)
-- [X] [CollectionUtils](../master/src/com/deepak/data/structures/Utils/CollectionUtils.java)
-- [X] [MapUtils](../master/src/com/deepak/data/structures/Utils/MapUtils.java)
+- [ ] [StringUtils]()
+- [ ] [NumberUtils]()
+- [ ] [ArrayUtils]()
+- [ ] [BooleanUtils]()
+- [ ] [CollectionUtils]()
+- [ ] [MapUtils]()
 
 **19. Iterators**
-- [X] [Standard Iterator](../master/src/com/deepak/data/structures/Iterators/StandardIterator.java)
+- [ ] [Standard Iterator]()
 - [ ] Deep Iterator
 - [ ] Filtering Iterator
-- [X] [Hopping Iterator](../master/src/com/deepak/data/structures/Iterators/HoppingIterator.java)
+- [ ] [Hopping Iterator]()
 - [ ] InOrder Iterator
-- [X] [LevelOrder Iterator](../master/src/com/deepak/data/structures/Iterators/LevelOrderIterator.java)
-- [X] [MaxIterator Iterator](../master/src/com/deepak/data/structures/Iterators/MaxIterator.java)
+- [ ] [LevelOrder Iterator]()
+- [ ] [MaxIterator Iterator]()
 - [ ] MultiIterator Iterator
 - [ ] Peek Iterator
 - [ ] PreOrder Iterator
