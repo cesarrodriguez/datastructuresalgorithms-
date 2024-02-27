@@ -232,6 +232,55 @@ public class LinkedList {
         }
     }
 
+    public int binaryToDecimal(){
+
+        if(head == null){
+            return 0;
+        }
+        int num = 0;
+        Node temp = head;
+
+        while (temp != null){
+            num = num * 2 + temp.value;
+            temp = temp.next;
+        }
+
+        return num;
+    }
+
+    public void reverseBetween(int startIndex, int endIndex) {
+        if (head == null) return;
+
+        // Dummy node to begin point
+        Node dummyNode = new Node(0);
+        // store begin point
+        dummyNode.next = head;
+        // Now dummy node is a first/previous value
+        Node previousNode = dummyNode;
+
+        //perform a loop even a value before Start Index
+        for (int i = 0; i < startIndex; i++) {
+            previousNode = previousNode.next;
+        }
+
+        // Current Node is a first Node to reverse
+        Node currentNode = previousNode.next;
+        //Interate just nodes to reverse
+        for (int i = 0; i < endIndex - startIndex; i++) {
+            // Node to move have after value;
+            Node nodeToMove = currentNode.next;
+            // current node has after value Node to move (after -> after (next.next))
+            currentNode.next = nodeToMove.next;
+            // now Node to move next has a "current node"
+            nodeToMove.next = previousNode.next;
+            // "Current Node" has a Node to move
+            previousNode.next = nodeToMove;
+        }
+        // finally head point to new/or same node.
+        head = dummyNode.next;
+    }
+
+
     public void getHead() {
         System.out.println("Head: " + (head == null? " ": head.getValue()));
     }
