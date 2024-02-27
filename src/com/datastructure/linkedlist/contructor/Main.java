@@ -117,7 +117,7 @@ public class Main {
 
         linkedList.getHead();
         linkedList.getTail();
-        linkedList.getLenght();
+        linkedList.getLength();
         linkedList.print();
 
 

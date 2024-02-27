@@ -289,7 +289,7 @@ public class LinkedList {
         System.out.println("Tail: " + (tail == null? "" : tail.getValue()));
     }
 
-    public void getLenght() {
+    public void getLength() {
         System.out.println("Length: " + length);
     }
 }

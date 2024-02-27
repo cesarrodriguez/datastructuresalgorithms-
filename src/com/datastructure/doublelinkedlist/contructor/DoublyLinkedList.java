@@ -12,6 +12,20 @@ public class DoublyLinkedList {
         length = 1;
     }
 
+    public void append(int value){
+        if(head == null){
+            return;
+        }
+
+        Node newNode = new Node(value);
+        newNode.next = tail.next;
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+        length++;
+
+    }
+
     public void print() {
         Node temp = head;
         while (temp != null) {
@@ -20,28 +34,15 @@ public class DoublyLinkedList {
         }
     }
 
-
-    public Node getHead() {
-        return head;
+    public void getHead() {
+        System.out.println("Head: " + (head == null? " ": head.getValue()));
     }
 
-    public void setHead(Node head) {
-        this.head = head;
+    public void getTail() {
+        System.out.println("Tail: " + (tail == null? "" : tail.getValue()));
     }
 
-    public Node getTail() {
-        return tail;
-    }
-
-    public void setTail(Node tail) {
-        this.tail = tail;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
+    public void getLength() {
+        System.out.println("Length: " + length);
     }
 }
