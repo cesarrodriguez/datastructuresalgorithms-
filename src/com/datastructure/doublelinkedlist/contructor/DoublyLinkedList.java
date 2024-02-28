@@ -167,6 +167,25 @@ public class DoublyLinkedList {
         }
     }
 
+    public void reverse(){
+        if(length < 2){
+            return;
+        }
+        Node temp = tail;
+        Node after = null;
+        for(int i = 0; i < length; i++){
+            Node before = temp.prev;
+            Node current = temp;
+            current.next = before;
+            current.prev = after;
+            after = current;
+            temp = before;
+        }
+        head = tail;
+        tail = after;
+    }
+
+
     public void getHead() {
         System.out.println("Head: " + (head == null? " ": head.getValue()));
     }

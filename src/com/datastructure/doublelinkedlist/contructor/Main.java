@@ -187,5 +187,14 @@ public class Main {
 
         myDLL.print();
 
+        System.out.println("");
+        System.out.println("Reverse values ================== \n");
+        myDLL.reverse();
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
     }
 }
