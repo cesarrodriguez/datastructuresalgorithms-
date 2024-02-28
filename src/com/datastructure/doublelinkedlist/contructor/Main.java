@@ -120,5 +120,72 @@ public class Main {
 
         myDLL.print();
 
+        System.out.println("");
+        System.out.println("SET value by Index ================== \n");
+        myDLL.set(0, -1);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+
+        System.out.println("");
+        System.out.println("SET value by Index ================== \n");
+        myDLL.set(3, 1);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+        System.out.println("");
+        System.out.println("INSERT value by Index ================== \n");
+        myDLL.insert(3, 1);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+        System.out.println("");
+        System.out.println("INSERT value by Index ================== \n");
+        myDLL.insert(4, 0);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+
+        System.out.println("");
+        System.out.println("REMOVE value by Index ================== \n");
+        myDLL.remove(0);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+
+        System.out.println("");
+        System.out.println("REMOVE value by Index ================== \n");
+        myDLL.remove(5);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+
+        System.out.println("");
+        System.out.println("REMOVE value by Index ================== \n");
+        myDLL.remove(3);
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
     }
 }
