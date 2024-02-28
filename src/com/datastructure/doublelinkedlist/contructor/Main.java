@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Start a new Contructor =========== \n");
-        DoublyLinkedList myDLL = new DoublyLinkedList(7);
-
+        DoublyLinkedList myDLL = new DoublyLinkedList(1);
+/*
         myDLL.getHead();
         myDLL.getTail();
         myDLL.getLength();
@@ -190,6 +190,41 @@ public class Main {
         System.out.println("");
         System.out.println("Reverse values ================== \n");
         myDLL.reverse();
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+        System.out.println("");
+        System.out.println("Is Palindrome ================== \n");
+        System.out.println("Palindrome? " + myDLL.isPalindrome());
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+
+        System.out.println("");
+        System.out.println("Is Palindrome ================== \n");
+        myDLL.append(1);
+        System.out.println("Palindrome? " + myDLL.isPalindrome());
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        myDLL.print();
+
+ */
+
+        System.out.println("");
+        System.out.println("Swap Pairs ================== \n");
+        myDLL.append(2);
+        myDLL.append(3);
+        myDLL.append(4);
+        myDLL.append(5);
+        myDLL.swapPairs();
         myDLL.getHead();
         myDLL.getTail();
         myDLL.getLength();

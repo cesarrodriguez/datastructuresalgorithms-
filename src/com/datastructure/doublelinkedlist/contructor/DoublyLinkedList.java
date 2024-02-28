@@ -185,6 +185,43 @@ public class DoublyLinkedList {
         tail = after;
     }
 
+    public boolean isPalindrome(){
+        Node tempHead = head;
+        Node tempTail = tail;
+        for(int i = 0; i < length/2; i++) {
+            if(tempHead.value != tempTail.value){
+                return false;
+            }
+            tempHead = tempHead.next;
+            tempTail = tempTail.prev;
+        }
+        return true;
+    }
+
+    public void swapPairs(){
+        if(length < 2){
+            return;
+        }
+        Node temp = head.next;
+        head = temp;
+        Node before = null;
+        for(int i = 1; i < length; i += 2){
+            before = temp.prev;
+            Node after = temp.next;
+            before.next = temp.next;
+            temp.next = temp.prev;
+            temp.prev = before.prev;
+            before.prev = temp;
+            if(temp.prev != null) {
+                temp.prev.next = temp;
+            }
+            if(after != null) {
+                after.prev = before;
+                temp = after.next;
+            }
+        }
+
+    }
 
     public void getHead() {
         System.out.println("Head: " + (head == null? " ": head.getValue()));
